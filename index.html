@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Tree Decoration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- section-01 -->
+    <section class="sec-01">
+        <div class="container">
+            <h2 class="main-title">
+                Christmas Tree Decorating Ideas
+            </h2>
+            <div class="content">
+                <div class="text-box">
+                    <h3>Red and Gold</h3>
+                    <p>Rich, classic tones like red and gold make any evergreen look supremely sophisticated.</p>
+                </div>
+                <div class="image">
+                    <img src="./images/img1.jpg" alt="Christmas tree">
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- section-02-->
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Festive Tree Decorations</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="./images/img2.jpg" alt="Christmas Tree Decorations">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Catch the collection</h4>
+                    <p>Trim the tree with trinkets, baubles and light strings – <br>make Your Home Merry and Bright!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-03-->
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">
+                Light Your Tree
+            </h3>
+            <div class="content">
+                <div class="media-info">
+                    <li>
+                        <a href="#" class="icon"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#" class="icon"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i> Youtube</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-store"></i> Stores</a>
+                    </li>
+                </div>
+                <div class="image">
+                    <img src="./images/img3.jpg" alt="Put light on tree">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--使用 ScrollReveal JS函式庫 -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--捲軸轉場動畫 兩秒完成 轉場效果：重複演示 -->
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: "60px",
+            duration: 2000,
+            delay: 200
+        });
+        ScrollReveal().reveal('.main-title, .section-title', {
+            delay: 200,
+            origin: "left"
+        });
+        ScrollReveal().reveal('.sec-01 .image, .info', {
+            delay: 600,
+            origin: "bottom"
+        });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: "right" });
+        ScrollReveal().reveal('.media-icons i', {
+            delay: 500,
+            origin: "bottom",
+            interval: 200,
+        });
+        ScrollReveal().reveal('.sec-02 .image, sec-03 .image', {
+            delay: 500,
+            origin: "left",
+        });
+        ScrollReveal().reveal('.media-info li', {
+            delay: 500,
+            origin: "left",
+            interval: 200,
+        });
+    </script>
+</body>
+
+</html>

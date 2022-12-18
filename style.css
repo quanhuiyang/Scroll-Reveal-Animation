@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(5, 39, 22), rgb(132, 165, 67));
+}
+
+/*上下 左右 置中對齊*/
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    color: #fff;
+}
+
+/*整體直欄排列 中軸對齊*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*section-01*/
+.main-title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+/*文章內容橫向排列*/
+.content {
+    width: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*圖片容器大小*/
+.content .image {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+/*圖片左上放置 等比例大小縮放 */
+.content .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+/*文字卡片背景設定透明 右下移動 加入毛玻璃濾鏡 */
+.content .text-box {
+    z-index: 20;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    transform: translate(50px, 50px);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content .text-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.media-icons {
+    margin-top: 100px;
+
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 60px;
+}
+
+/* section-02 */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.info-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 20px;
+}
+
+/* section-03*/
+.media-info {
+    width: 300px;
+    margin-left: 50px;
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.media-info li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*最後的元素不適用向下留白*/
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+/*波浪排列*/
+.media-info li:nth-child(1),
+.media-info li:nth-child(5) {
+    padding-left: 100px;
+}
+
+.media-info li:nth-child(2),
+.media-info li:nth-child(4) {
+    padding-left: 50px;
+}
+
+.sec-03 {
+    margin-bottom: 80px;
+}
