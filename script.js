@@ -16,21 +16,24 @@ ScrollReveal().reveal('.sec-01 .image, .info', {
     origin: "bottom"
 });
 
-ScrollReveal().reveal('.text-box', { delay: 700, origin: "right" });
+ScrollReveal().reveal('.text-box', { 
+    delay: 700, 
+    origin: "right" 
+});
 
 ScrollReveal().reveal('.media-icons i', {
     delay: 500,
     origin: "bottom",
-    interval: 200,
+    interval: 200
 });
 
 ScrollReveal().reveal('.sec-02 .image, sec-03 .image', {
     delay: 500,
-    origin: "left",
+    origin: "left"
 });
 
 ScrollReveal().reveal('.media-info li', {
     delay: 500,
     origin: "left",
-    interval: 200,
+    interval: 200
 });
